@@ -2,8 +2,8 @@ import { getUsers } from '../service/user';
 
 export const get = (ctx) => {
 	ctx.status = 307;
-	ctx.set('Location', 'intent://scan/#Intent;scheme=paymebiz;package=com.hsbc.digital.peak.PaymeBiz.dev.debug;end' )
-	ctx.redirect = ('intent://scan/#Intent;scheme=paymebiz;package=com.hsbc.digital.peak.PaymeBiz.dev.debug;end')
+	ctx.set('Location', 'intent://home/#Intent;scheme=paymebiz;package=com.hsbc.digital.peak.PaymeBiz.dev.debug;end' )
+	ctx.redirect = ('intent://home/#Intent;scheme=paymebiz;package=com.hsbc.digital.peak.PaymeBiz.dev.debug;end')
     ctx.body = 'Redirecting to new intent'
 };
 
