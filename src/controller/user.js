@@ -2,8 +2,8 @@ import { getUsers } from '../service/user';
 
 export const get = (ctx) => {
 	ctx.status = 302;
-	ctx.set('Location', 'http://com.hsbc.digial.peak.paymebiz/user' )
-	ctx.redirect = ('http://com.hsbc.digial.peak.paymebiz/user')
+	ctx.set('Location', 'http://com.hsbc.digial.peak.paymebiz' )
+	ctx.redirect = ('http://com.hsbc.digial.peak.paymebiz')
     ctx.body = 'Redirecting to new intent'
 };
 
